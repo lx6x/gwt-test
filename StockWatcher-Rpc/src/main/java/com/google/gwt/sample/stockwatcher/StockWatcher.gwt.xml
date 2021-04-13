@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 在更新GWT版本时，还应该更新这个DTD引用，这样您的应用程序就可以利用最新的GWT模块功能。 包含GWT模块的定义，构成GWT应用程序或共享包的资源的集合。默认情况下，StockWatcher继承了每个项目所需的核心GWT功能。（可选）您可以指定要继承的其他GWT模块. -->
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.9.0//EN"
+        "http://gwtproject.org/doctype/2.9.0/gwt-module.dtd">
+<module rename-to='stockwatcher'>
+    <!-- 继承核心Web工具包的东西。 -->
+    <inherits name='com.google.gwt.user.User'/>
+
+    <!-- Inherit the default GWT style sheet. You can change 继承默认的GWT样式表 -->
+    <!-- the theme of your GWT application by uncommenting 通过取消注释来确定GWT应用程序的主题 -->
+    <!-- any one of the following lines. 以下任意一行。 -->
+    <!--    <inherits name='com.google.gwt.user.theme.clean.Clean'/>-->
+    <!--    <inherits name='com.google.gwt.user.theme.standard.Standard'/>-->
+    <inherits name='com.google.gwt.user.theme.chrome.Chrome'/>
+    <!--    <inherits name='com.google.gwt.user.theme.dark.Dark'/>-->
+
+    <!-- Other module inherits 其他模块继承 -->
+
+    <!-- Specify the app entry point class. 指定应用程序入口点类。 -->
+    <entry-point class='com.google.gwt.sample.stockwatcher.client.StockWatcher'/>
+
+    <!-- Specify the paths for translatable code 指定可翻译代码的路径 -->
+    <source path='client'/>
+    <source path='shared'/>
+
+    <!-- allow Super Dev Mode 允许超级开发模式 -->
+    <add-linker name="xsiframe"/>
+
+    <stylesheet src=""/>
+</module>
